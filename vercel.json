@@ -3,12 +3,12 @@
     "builds": [
         {
             "src": "api.ts",
-            "use": "@now/node"
+            "use": "@vercel/node"
         }
     ],
     "routes": [
         {
-            "src": "api.ts",
+            "src": "/((?!api.ts).*)",
             "dest": "api.ts"
         }
     ]
