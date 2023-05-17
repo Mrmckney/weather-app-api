@@ -18,7 +18,7 @@ app.post("/api/weather", (req: Request, res: Response) => {
             res.json(data)
         })
         .catch(err => {
-            console.log(err)
+            res.json(err)
         })
 })
 
@@ -29,7 +29,7 @@ app.post("/api/forecast", (req: Request, res: Response) => {
             res.json(data)
         })
         .catch(err => {
-            console.log(err)
+            res.json(err)
         })
 })
 
@@ -40,7 +40,7 @@ app.post("/api/search", (req: Request, res: Response) => {
             res.json(data)
         })
         .catch(err => {
-            console.log(err)
+            res.json(err)
         })
 })
 
