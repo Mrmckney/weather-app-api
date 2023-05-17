@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "npx ts-node-esm ./src/api.ts",
-    "build": "./build && tsc"
+    "server": "npx ts-node-esm api.ts",
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
