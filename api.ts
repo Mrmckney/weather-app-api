@@ -44,6 +44,6 @@ app.post("/api/search", (req: Request, res: Response) => {
         })
 })
 
-export default app
-
 app.listen(process.env.VITE_PORT, () => console.log(`Server on port ${process.env.VITE_PORT || 3001}`))
+
+export default app

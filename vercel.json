@@ -8,8 +8,14 @@
     ],
     "routes": [
         {
-            "src": "/((?!api.ts).*)",
+            "src": "/api/(.*)",
             "dest": "api.ts"
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/api/(.*)",
+            "destination": "/api"
         }
     ]
 }
