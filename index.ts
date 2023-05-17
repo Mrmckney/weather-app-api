@@ -11,6 +11,10 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
+app.get("/", (req, res) => {
+    res.send("Hello World")
+})
+
 app.post("/api/weather", (req: Request, res: Response) => {
     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${req.body.lat}&lon=${req.body.long}&units=imperial&appid=${process.env.VITE_API_KEY}`)
         .then(async (response) => {
